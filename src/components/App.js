@@ -1,11 +1,20 @@
 import React from 'react';
+import Header from './Header';
+import ColorCard from './ColorCard';
+import Button from './Button';
 
 const App = () => {
   return (
-    <div className='md:container md:mx-auto flex justify-center'>
-      <h1 className='text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate'>
-        Color Palette Generator
-      </h1>
+    <div className='md:container md:mx-auto p-4'>
+      <Header />
+      <div className='flex flex-wrap mt-16 justify-around'>
+        <ColorCard />
+        <ColorCard />
+        <ColorCard />
+        <ColorCard />
+        <ColorCard />
+      </div>
+      <Button />
     </div>
   );
 };
