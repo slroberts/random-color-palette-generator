@@ -14,7 +14,7 @@ Screenshots of your app and/or a link to your live demo
 ## Installation
 
 Clone project
-`git clone https://github.com/slroberts/color-palette-generator.git`
+`git clone https://github.com/slroberts/random-color-palette-generator.git`
 
 Install npm and yarn add-ons
 `npm install` and `yarn install`
