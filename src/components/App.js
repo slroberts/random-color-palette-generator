@@ -14,7 +14,7 @@ class App extends React.Component {
   fetchColors = async () => {
     const res = await axios({
       method: 'POST',
-      url: 'http://colormind.io/api/',
+      url: ' https://cors-everywhere.herokuapp.com/http://colormind.io/api/',
       data: JSON.stringify({
         model: 'default',
       }),
