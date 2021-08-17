@@ -7,9 +7,11 @@ Find the project requirements here: [Random color palette generator web app](htt
 
 Built with React.js using [Colormind API](http://colormind.io/api-access/), axios, React-Clipboard, and tailwindcss.
 
-## Screenshots and demo
+## Screenshot
 
-Screenshots of your app and/or a link to your live demo
+<a href="https://random-color-palette-generator-three.vercel.app/" target="_blank">
+<img src="color-palette-generator.png"/>
+</a>
 
 ## Installation
 
