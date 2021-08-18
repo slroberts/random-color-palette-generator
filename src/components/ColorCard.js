@@ -25,7 +25,7 @@ const ColorCard = ({ colors }) => {
       return (
         <div
           key={Math.random()}
-          className='mx-4 mb-12 shadow-lg rounded-xl w-3/5 md:w-52 h-56 md:h-64 bg-white cursor-pointer'
+          className='mx-4 mb-8 shadow-lg rounded-xl w-3/5 md:w-52 h-56 md:h-72 bg-white cursor-pointer'
         >
           <Clipboard
             data-clipboard-text={`rgb(${color})`}
@@ -33,7 +33,7 @@ const ColorCard = ({ colors }) => {
             onClick={() => handleOnClick(color)}
           >
             <div
-              className='m-2 w-50 h-40 md:h-48 rounded-md'
+              className='m-2 w-50 h-40 md:h-56 rounded-md'
               style={{ backgroundColor: `rgb(${color})` }}
             ></div>
           </Clipboard>
@@ -54,7 +54,7 @@ const ColorCard = ({ colors }) => {
       {isCopied.copied ? <CopiedMessage isCopied={isCopied} /> : null}
 
       {colors.length > 0 ? (
-        <div className='flex flex-wrap mt-16 justify-center'>
+        <div className='flex flex-wrap mt-12 justify-center'>
           {renderColorCard()}
         </div>
       ) : (
