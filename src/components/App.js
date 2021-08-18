@@ -15,9 +15,9 @@ class App extends React.Component {
     const res = await axios({
       method: 'POST',
       url: ' https://cors-everywhere.herokuapp.com/http://colormind.io/api/',
-      data: JSON.stringify({
+      data: {
         model: 'default',
-      }),
+      },
     })
       .then((res) => {
         this.setState({ colors: res.data.result });
