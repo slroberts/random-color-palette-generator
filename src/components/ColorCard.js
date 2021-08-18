@@ -11,7 +11,7 @@ const ColorCard = ({ colors }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsCopied({ copied: false });
-    }, 3500);
+    }, 3000);
 
     return () => clearTimeout(timeout);
   }, [isCopied]);
